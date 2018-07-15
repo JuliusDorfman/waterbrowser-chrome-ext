@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "WaterBrowser",
+  "description": "So you don't get thirsty when you browse the internet",
+  "version": "1",
+  "web_accessible_resources": [
+    "water/*.jpg"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["index.js"],
+    "run_at": "document_end"
+  }]
+}
